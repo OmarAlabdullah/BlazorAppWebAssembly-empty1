@@ -1,0 +1,6 @@
+services:
+  blazorwebassemblydocker:
+    image: blazorwebassembly.Server
+    build:
+      context: .
+      dockerfile: BlazorAppWebAssembly-empty1/BlazorAppWebAssembly-empty1.Server/Dockerfile
