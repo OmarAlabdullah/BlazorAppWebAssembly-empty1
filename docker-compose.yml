@@ -3,4 +3,7 @@ services:
     image: blazorwebassembly.Server
     build:
       context: .
-      dockerfile: BlazorAppWebAssembly-empty1/BlazorAppWebAssembly-empty1.Server/Dockerfile
+      dockerfile: Server/Dockerfile
+    ports:
+      - "8080:80"  # Map host port 8080 to container port 80
+      - "8443:443" # Map host port 8443 to container port 443
